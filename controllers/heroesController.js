@@ -19,7 +19,7 @@ module.exports = {
 
         if (heroe === undefined) {
             res.send("No encontramos un héroe para mostrarte su biografía");
-        } else if (req.params.ok.toLowerCase() === 'ok'){
+        } else if (req.params.ok === 'ok'){
             res.send(`Heroe: ${heroe.nombre} <br> Reseña: ${heroe.resenia}`);
         } else {
             res.send(`${heroe.nombre} dice: Lamento que no quieras saber más de mí :(`);
